@@ -1,13 +1,36 @@
+/* Fontes de texto. */
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Variáveis de cor. */
+@property --postButtonColor1 {
+    syntax: '<color>';
+    initial-value: rgba(75,131,215,1);
+    inherits: false;
+} 
+@property --postButtonColor2 {
+    syntax: '<color>';
+    initial-value: rgba(33,56,97,1);
+    inherits: false;
+}
+@property --postButtonShadow {
+    syntax: '<color>';
+    initial-value: rgba(0, 0, 0, 0.3);
+    inherits: false;
+}
+
+/* Códigos gerais. */
 body {
+    -webkit-transition: .4s;
+    transition: .4s;
     font-family: "ABeeZee", sans-serif;
     margin: 0;
     background-color: #263051;
 }
-body * {
+* {
+    -webkit-transition: .4s;
+    transition: .4s;
     margin: 0;
 }
 
@@ -212,11 +235,19 @@ header .userPanelBG {
     bottom: 25px;
     margin: auto;
     width: 80px;
-    filter: drop-shadow(-6px 10px 10px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(-6px 10px 10px var(--postButtonShadow));
     font-size: 13px;
     padding: 4px 11px;
     border: none;
     border-radius: 77px;
     color: #fff;
-    background: linear-gradient(90deg, rgba(75,131,215,1) 21%, rgba(33,56,97,1) 100%);
+    background: linear-gradient(90deg, var(--postButtonColor1) 21%, var(--postButtonColor2) 100%);
+    transition: --postButtonColor1 0.3s, --postButtonColor2 0.3s, --postButtonShadow 0.3s;
+}
+#postButton:hover {
+    width: 90px;
+    font-size: 16px;
+    --postButtonColor1: rgb(44, 76, 133);
+    --postButtonColor2: rgb(48, 118, 223);
+    --postButtonShadow: rgba(0, 0, 0, 0.671);
 }

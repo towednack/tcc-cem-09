@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "ABeeZee", sans-serif;
+    margin: 0;
+    background-color: #263051;
+}
+body * {
+    margin: 0;
+}
+
+
+/* Cabeçalho da página. */
+header {
+    position: relative;
+    height: 50px;
+    align-items: center;
+    background-color: #3d508d;
+}
+header .headerDropShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.231));
+    background-color: #3d508d;
+}
+header .logoCem09 {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #222c4e;
+}
+.logoCem09 img {
+    width: 130px;
+}
+header .logoBG {
+    position: absolute;
+    height: 128px;
+    width: 156px;
+    filter: drop-shadow(-45px 10px 20px rgba(0, 0, 0, 0.231));
+    border-radius: 0 0 15px 0;
+    background-color: #3d508d;
+}
+header ul {
+    position: absolute;
+    /* Alinhar verticalmente */
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    /*  */
+    left: 160px;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    border-radius: 8px;
+    background-color: #222c4e;
+}
+header ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 45px;
+    color: #fff;
+}
+header ul .currentPage {
+    margin: 5px;
+    padding: 3px 40px;
+    border-radius: 8px;
+    color: #222c4e;
+    background-color: #919ab6;
+}
+header #themeSwitch {
+    position: absolute;
+    top: 7px;
+    right: 110px;
+}
+#themeSwitch img {
+    width: 35px;
+}
+header .userPanel {
+    position: absolute;
+    z-index: 3;
+    top: 5px;
+    right: 8px;
+    padding: 8px 10px;
+    border-radius: 0 11px 11px 0;
+    background-color: #162246;
+}
+.userPanel img {
+    width: 41px;
+}
+header .userPanelDetail {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 73px;
+    height: 60px;
+    width: 11px;
+    border-radius: 6px 0 0 6px;
+    background-color: #222c4e;
+
+}
+header .userPanelBG {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 72px;
+    width: 92px;
+    border-radius: 0 0 0 15px;
+    background-color: #3d508d;
+}
+
+/* Menu lateral */
+.sideMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92px;
+    height: 800px;
+    padding-top: 80px;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(38,48,81,1) 40%, rgba(116,127,149,1) 73%);
+}
+.sideMenu button {
+    width: 85%;
+    height: 50px;
+    font-size: 13px;
+    margin: 5px;
+    margin-bottom: 7px;
+    font-family: "ABeeZee", sans-serif;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.315));
+}
+
+/* Seção das informações da página. */
+.pageInfo {
+    color: #fff;
+}
+.pageInfo h2 {
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+.pageInfo h1 {
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.377));
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px;
+}
+
+
+/* Seção dos posts. */
+.postsMain {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+    padding: 20px;
+}
+
+.postBlock {
+    display: inline-flex;
+    text-align: center;
+    width: 450px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 25px;
+    padding: 20px 10px 0 10px;
+    border-radius: 7px;
+    background-color: #1a2341;
+}
+
+.leftSide {
+    flex: 0.8;
+}
+.leftSide img {
+    height: 85%;
+    margin-left: 10px;
+}
+
+.rightSide {
+    position: relative;
+    flex: 1.4;
+    margin: 5px;
+}
+.rightSide p {
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: #fff;
+}
+.rightSide .postTitle {
+    font-size: 22px;
+}
+.rightSide #postButton {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 25px;
+    margin: auto;
+    width: 80px;
+    filter: drop-shadow(-6px 10px 10px rgba(0, 0, 0, 0.3));
+    font-size: 13px;
+    padding: 4px 11px;
+    border: none;
+    border-radius: 77px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(75,131,215,1) 21%, rgba(33,56,97,1) 100%);
+}

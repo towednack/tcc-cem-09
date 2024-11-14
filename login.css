@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "ABeeZee", sans-serif !important;
+    margin: 0;
+    background-color: #263051;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-mid {
+    background-color: #171E38;
+    width: 440px;
+    height: 202px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 32px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.img-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logoCem09 {
+    width: 162px;
+}
+
+#themeSwitch {
+    width: 35px !important;
+}
+
+header #themeSwitch {
+    position: absolute;
+    top: 42px;
+    right: 45px;
+}
+
+.forms-cadastro,
+.forms-login {
+    width: 485px;
+    height: 475px;
+    background-color: #171E38;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.container-forms {
+    height: 600px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 90px !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px !important;
+}
+
+input {
+    width: 340px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 12px;
+    border: none !important;
+    font-size: 20px;
+    font-family: "ABeeZee", sans-serif;
+}
+
+#turmas {
+    width: 95px;
+    height: 50px;
+    text-align: center !important;
+    font-size: 20px !important;
+    font-family: "ABeeZee", sans-serif;
+    border-radius: 12px;
+    background-color: #AFAFAF;
+}
+
+button {
+    width: 145px !important;
+    height: 49px !important;
+    border-radius: 4px !important;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center !important;
+    background-color: #737DA0;
+    color: white !important;
+    border: none !important;
+}
+
+.esqueceu-senha{
+    color: white !important;
+    font-size: 16px;
+    text-align: center !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.btn2 {
+    margin-top: 125px;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.btn {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+label {
+    color: white !important;
+}
+
+.eye {
+    width: 35px;
+}
+
+.wpp, .email-contato {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.whatsappIco, .emailIco {
+    width: 32px;
+    margin-right: 6px;
+}
+
+footer {
+    background-color: #000410;
+    color: white;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center !important;
+}

@@ -242,10 +242,11 @@ header .userPanelBG {
     border-radius: 77px;
     color: #fff;
     background: linear-gradient(90deg, var(--postButtonColor1) 21%, var(--postButtonColor2) 100%);
-    transition: --postButtonColor1 0.3s, --postButtonColor2 0.3s, --postButtonShadow 0.3s;
+    transition: --postButtonColor1 0.3s, --postButtonColor2 0.3s, --postButtonShadow 0.3s, width 0.3s, padding 0.3s, font-size 0.3s
 }
 #postButton:hover {
-    width: 90px;
+    width: 100px;
+    padding: 8px 11px;
     font-size: 16px;
     --postButtonColor1: rgb(44, 76, 133);
     --postButtonColor2: rgb(48, 118, 223);

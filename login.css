@@ -58,6 +58,7 @@ header #themeSwitch {
 
 .forms-cadastro,
 .forms-login {
+    position: relative;
     width: 485px;
     height: 475px;
     background-color: #171E38;
@@ -68,8 +69,24 @@ header #themeSwitch {
     align-items: center !important;
 }
 
+.formMainLabels {
+    display: flex;
+    width: 58%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 90px;
+}
+.formMainLabels p {
+    flex: 1;
+    font-size: 24px;
+    color: #fff;
+}
+
 .container-forms {
-    height: 600px;
+    height: 450px;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -77,26 +94,45 @@ header #themeSwitch {
 }
 
 form {
+    position: absolute;
+    top: 50px;
     display: flex;
     flex-direction: column;
-
-    gap: 10px !important;
+    align-items: end;
+    gap: 25px !important;
+}
+.form-group {
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 input {
     width: 340px;
     height: 40px;
-    margin-left: 10px;
+    margin: 0 8px;
     border-radius: 12px;
     border: none !important;
     text-align: center;
+    vertical-align: middle;
     font-size: 20px;
     font-family: "ABeeZee", sans-serif;
 }
+input[type=password] {
+    display: inline;
+    width: 273px;
+}
+.passwordShowHide {
+    display: inline;
+    float: right;
+    width: 33px;
+}
 
 #turmas {
-    width: 95px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     margin: 0 0 0 10px;
     text-align: center !important;
     font-size: 20px !important;
@@ -131,18 +167,22 @@ a {
     background-color: #425E9B;
 }
 
+.btn, .btn2 {
+    position: absolute;
+    bottom: 40px;
+}
 .btn2 {
-    margin-top: 125px;
     display: flex !important;
     justify-content: center !important;
 }
-
 .btn {
     display: flex !important;
     justify-content: center !important;
 }
 
 label {
+    width: 60px;
+    margin-right: -5px;
     color: white !important;
 }
 
@@ -161,15 +201,24 @@ label {
 }
 
 footer {
+    display: flex;
     position: absolute;
     right: 0;
     left: 0;
     bottom: 0;
-    height: 180px;
+    height: 140px;
+    font-size: 12px;
     background-color: #000410;
     color: white;
     padding: 15px 40px;
 }
+footer .footerContent {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+}
+
 
 .copyright {
     text-align: center !important;

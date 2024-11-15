@@ -1,4 +1,4 @@
 # TCC - Programadores de Futuro
  ## Website do CEM 09.
  <br>
-<img src="https://s3-alpha-sig.figma.com/thumbnails/51e047c4-121d-4651-b5a1-c47fa0037839?Expires=1732492800&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&amp;Signature=Lun6k429dyuahqvXOXfIkWk1Z5rx4SQtBC5LlD-vpBrqvjaHBnCXVJlFewRku4s1jnF0xWl62A1VKdrPYvatdz-xuATY3UufICdO7rRrtWF~YeItKQyu07nAUO4kr5ztLGHcJbUOorYH9eMWuUKniTJfFcKVKOLK6GmykhuURiWUtXL159QEgqJaULWUyd72RCrAk9VG60-lxr89bFVTzDCArsYWE6WayKrzKtmRAsVglkOxSm~0FKj64GP3EO9iSVMAuQHfhDG-0Ohp5OdDfXHGXPQigX8by2VzICfLVmAshJNid62zrn6MTN2RstkRLAv7aqTBpMgAvQHVWhtpZA__">
+<img src="https://s3-alpha-sig.figma.com/thumbnails/fb632e47-84c6-4d0c-901c-546ccae2c4c9?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6MG93EfHbttW7xCyvuWh9BcqeDPp5vLBROfUKzIKxVqPdlhbBihY3LzCaw86whiVU00jQdUI3Qek~jaDZ7uofBPHIZ~bRYr4trKgfoZRN3CGeqViSyWDXMBRlrKusdurYxSuKBMAxZiSVWuq5ahPBe3xpfuUbLMGQUB7dKF2DrfJI~qvaocjL-J-q38-TTuSXgIu-Tjlhip4ZbHasmfG9g3GBqFDYPK6mi3PJiaXaP5GnKmPRJutZF-pmrrHpxeXdPI-sBpmIf7Eh8Gp1QDLN4rSTvNAb3HJYA7o0AY0Q9qED7nJaukAxasm66zuNYBmdMFBOtO5yvoy1ge1R8Psw__">

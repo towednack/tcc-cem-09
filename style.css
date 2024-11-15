@@ -14,11 +14,6 @@
     initial-value: rgba(33,56,97,1);
     inherits: false;
 }
-@property --postButtonShadow {
-    syntax: '<color>';
-    initial-value: rgba(0, 0, 0, 0.3);
-    inherits: false;
-}
 
 /* Códigos gerais. */
 body {
@@ -29,8 +24,10 @@ body {
     background-color: #263051;
 }
 * {
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
+    -o-transition:0.3s;
+    transition:0.3s;
     margin: 0;
 }
 
@@ -60,6 +57,9 @@ header .logoCem09 {
 }
 .logoCem09 img {
     width: 130px;
+}
+.logoCem09 img:hover {
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.651));
 }
 header .logoBG {
     position: absolute;
@@ -93,6 +93,9 @@ header ul li {
     margin: 5px 45px;
     color: #fff;
 }
+header ul li:hover {
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.356));
+}
 header ul .currentPage {
     margin: 5px;
     padding: 3px 40px;
@@ -108,6 +111,9 @@ header #themeSwitch {
 #themeSwitch img {
     width: 35px;
 }
+#themeSwitch img:hover {
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.651));
+}
 header .userPanel {
     position: absolute;
     z-index: 3;
@@ -119,6 +125,9 @@ header .userPanel {
 }
 .userPanel img {
     width: 41px;
+}
+.userPanel img:hover {
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.651));
 }
 header .userPanelDetail {
     position: absolute;
@@ -151,6 +160,7 @@ header .userPanelBG {
     height: 800px;
     padding-top: 80px;
     text-align: center;
+    align-items: right;
     background: linear-gradient(0deg, rgba(38,48,81,1) 40%, rgba(116,127,149,1) 73%);
 }
 .sideMenu button {
@@ -163,6 +173,11 @@ header .userPanelBG {
     border-radius: 5px;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.315));
+}
+.sideMenu button:hover {
+    width: 100%;
+    margin: 5px 0;
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.315));
 }
 
 /* Seção das informações da página. */
@@ -235,20 +250,20 @@ header .userPanelBG {
     bottom: 25px;
     margin: auto;
     width: 80px;
-    filter: drop-shadow(-6px 10px 10px var(--postButtonShadow));
+    filter: drop-shadow(-6px 10px 10px rgba(0, 0, 0, 0.3));
     font-size: 13px;
     padding: 4px 11px;
     border: none;
     border-radius: 77px;
     color: #fff;
     background: linear-gradient(90deg, var(--postButtonColor1) 21%, var(--postButtonColor2) 100%);
-    transition: --postButtonColor1 0.3s, --postButtonColor2 0.3s, --postButtonShadow 0.3s, width 0.3s, padding 0.3s, font-size 0.3s
+    transition: --postButtonColor1 0.3s, --postButtonColor2 0.3s, width 0.3s, padding 0.3s, font-size 0.3s, filter 0.5s;
 }
 #postButton:hover {
-    width: 100px;
+    width: 90px;
     padding: 8px 11px;
-    font-size: 16px;
-    --postButtonColor1: rgb(44, 76, 133);
-    --postButtonColor2: rgb(48, 118, 223);
-    --postButtonShadow: rgba(0, 0, 0, 0.671);
+    font-size: 14px;
+    --postButtonColor1: rgb(54, 90, 153);
+    --postButtonColor2: rgb(86, 147, 238);
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.63));
 }

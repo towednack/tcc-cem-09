@@ -17,6 +17,7 @@
                 <img src="../media/icons/cem09LogoWhite.png" class="logoCem09">
             </div>
             <h1 class="welcome">Bem-vindo(a)!</h1>
+            <p>Para ter uma experiência personalizada, entre com sua conta abaixo.</p>
             <img src="../media/icons/sunIcon.png" id="themeSwitch">
     </header>
 
@@ -27,6 +28,7 @@
             <p>Faça login como aluno:</p>
         </div>
         <div class="container-forms">
+
             <div class="forms-cadastro">
                 <form action="#" method="post">
                     <!-- nome para cadastro -->
@@ -47,9 +49,9 @@
                     <!-- senha para cadastro -->
                     <div class="form-group">
                         <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha">
+                        <input type="password" name="senha1" id="senha1">
                         <span class="input-group-addon">
-                            <img src="../media/icons/closedEyeWhite.png" class="passwordShowHide">
+                            <img src="../media/icons/closedEyeWhite.png" id="passwordShowHideButton1" onclick="passwordShowHide(1)">
                         </span>
                     </div>
 
@@ -100,6 +102,9 @@
                 </div>
 
             </div>
+
+            <div class="formDivisor"></div>
+
             <div class="forms-login">
                 <form action="#" method="post">
                     <!-- email para cadastro -->
@@ -111,14 +116,14 @@
                     <!-- senha para cadastro -->
                     <div class="form-group">
                         <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha">
+                        <input type="password" name="senha2" id="senha2">
                         <span class="input-group-addon">
-                            <img src="../media/icons/closedEyeWhite.png" class="passwordShowHide">
+                            <img src="../media/icons/closedEyeWhite.png" id="passwordShowHideButton2" onclick="passwordShowHide(2)">
                         </span>
                     </div>
 
                     <!-- esqueceu a senha -->
-                    <h2 class="esqueceu-senha"><a href="#">Esqueceu a senha?</a></h2>
+                    <h2 class="esqueceu-senha"><a href="#" onclick="forgotPassword('open'); return false;">Esqueceu a senha?</a></h2>
 
                 </form>
                 <div class="btn2">
@@ -126,19 +131,37 @@
                 </div>
 
             </div>
+
         </div>
     </main>
 
     <footer>
-        <div class="footerContent">
+        <div class="footerContact">
             <p>CONTATO</p>
 
-            <p class="wpp"><img src="../media/icons/whatsappIconWhite.png" class="whatsappIco"> (61) 94002-8922</p>
-            <p class="email-contato"><img src="../media/icons/emailIconWhite.png" class="emailIco"> direcao@cem09.edu.br</p>
-            <p class="copyright">Todos os direitos reservados © 2024 - Centro de Ensino Médio 09 de Ceilândia</p>
+            <p class="wpp"><img src="../media/icons/whatsappIconWhite.png" class="whatsappIco"> (61) 94002-8922 <a id="openWhatsapp" href="https://wa.me/61940028922">Abrir no Whatsapp</a></p>
+            <p class="email-contato"><img src="../media/icons/emailIconWhite.png" class="emailIco"> direcao@cem09.edu.br <a id="openEmail" href="mailto:direcao@cem09.edu.br">Abrir email</a></p>
         </div>
+        <div class="footerMiddle">
+            
+        </div>
+        <div class="footerRight">
+
+        </div>
+        <p class="copyright">Todos os direitos reservados © 2024 - Centro de Ensino Médio 09 de Ceilândia</p>
     </footer>
 
+    <!-- POPUPS -->
+    <div id="forgotPasswordPopup">
+        <div class="warningBlock">
+            <img src="../media/icons/closeIconBlack.webp" alt="Fechar." onclick="forgotPassword('close')">
+            <p>Para recuperar ou alterar sua senha, contate a direção da escola em:</p>
+            <div>
+                <p class="wpp"><img src="../media/icons/whatsappIconBlack.png" class="whatsappIco"> (61) 94002-8922 <a id="openWhatsapp" href="https://wa.me/61940028922">Abrir no Whatsapp</a></p>
+                <p class="email-contato"><img src="../media/icons/emailIconBlack.png" class="emailIco"> direcao@cem09.edu.br <a id="openEmail" href="mailto:direcao@cem09.edu.br">Abrir email</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

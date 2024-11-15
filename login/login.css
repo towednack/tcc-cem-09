@@ -15,13 +15,19 @@ header {
 
 .header-mid {
     background-color: #171E38;
-    width: 440px;
+    width: 500px;
     height: 160px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     display: block;
     justify-content: center;
     flex-wrap: wrap;
+}
+.header-mid p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
 }
 
 .welcome {
@@ -90,7 +96,13 @@ header #themeSwitch {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 90px !important;
+    gap: 60px !important;
+}
+
+.formDivisor {
+    width: 4px;
+    height: 90px;
+    background-color: #192038;
 }
 
 form {
@@ -132,11 +144,11 @@ input {
     font-size: 13px;
     color: #fff;
 }
-input[type=password] {
+input[type=password], #senha1, #senha2 {
     display: inline;
-    width: 273px;
+    max-width: 273px;
 }
-.passwordShowHide {
+#passwordShowHideButton1, #passwordShowHideButton2 {
     display: inline;
     float: right;
     width: 33px;
@@ -154,21 +166,54 @@ input[type=password] {
 }
 
 button {
-    width: 145px !important;
-    height: 49px !important;
-    border-radius: 4px !important;
+    width: 145px;
+    height: 49px;
+    border-radius: 4px;
     font-size: 22px;
     text-transform: uppercase;
     text-align: center !important;
     background-color: #737DA0;
-    color: white !important;
-    border: none !important;
+    color: white;
+    border: none;
 }
 
 .esqueceu-senha{
     font-size: 13px;
     font-weight: normal;
     text-align: center !important;
+}
+#forgotPasswordPopup {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0000009c;
+}
+.warningBlock {
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    margin-top: 5%;
+    text-align: right;
+    background-color: #dadada;
+}
+.warningBlock > img {
+    width: 50px;
+    margin: 5px;
+    filter: opacity(0.5);
+}
+.warningBlock p {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.warningBlock div {
+    width: 45%;
+    margin: auto;
+}
+.warningBlock div a {
+    margin-left: 5px;
 }
 
 a {
@@ -224,14 +269,28 @@ footer {
     color: white;
     padding: 15px 40px;
 }
-footer .footerContent {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  align-self: flex-end;
+.footerContact, .footerMiddle, .footerRight {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.footerContact a {
+    text-align: center;
+    width: 70px;
+    margin-left: 10px;
+    font-size: 10px;
+    background-color: #2a365c;
 }
 
-
 .copyright {
-    text-align: center !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #000;
 }

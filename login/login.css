@@ -62,6 +62,10 @@ header #themeSwitch {
     right: 45px;
 }
 
+.mobileMain {
+    display: none;
+}
+
 .forms-cadastro,
 .forms-login {
     position: relative;
@@ -293,4 +297,52 @@ footer {
     padding: 10px 0;
     text-align: center;
     background-color: #000;
+}
+
+@media only screen and (max-width: 1250px) {
+    main {
+        display: none;
+    }
+    body {
+        text-align: center;
+    }
+    .mobileMain {
+        display: inline-block;
+        margin: auto;
+        margin-top: 50px;
+        width: 50%;
+        text-align: center;
+    }
+    .chooseLoginRegister {
+        display: inline-block;
+        width: 99%;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 8px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        border-radius: 0 0 30px 30px;
+        background-color: #171E38;
+    }
+    .chooseLoginRegister p {
+        margin: 50px 0 20px 0;
+        font-size: 25px;
+        color: #fff;
+    }
+    .chooseLoginRegister button {
+        display: block;
+        width: 145px;
+        height: 49px;
+        margin: 5px auto;
+        border-radius: 4px;
+        font-size: 22px;
+        text-align: center !important;
+        background-color: #737DA0;
+        color: white;
+        border: none;
+    }
+    
+    footer {
+        bottom: -50px;
+    }
 }

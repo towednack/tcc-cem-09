@@ -62,19 +62,19 @@ header #themeSwitch {
     right: 45px;
 }
 
-.mobileMain {
+#mobileMain {
     display: none;
 }
 
-.forms-cadastro,
-.forms-login {
+#forms-cadastro,
+#forms-login {
     position: relative;
     width: 485px;
     height: 475px;
     background-color: #171E38;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    display: flex !important;
+    display: flex;
     justify-content: center !important;
     align-items: center !important;
 }
@@ -103,7 +103,7 @@ header #themeSwitch {
     gap: 60px !important;
 }
 
-.formDivisor {
+#formDivisor {
     width: 4px;
     height: 90px;
     background-color: #192038;
@@ -300,13 +300,13 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
-    main {
-        display: none;
-    }
     body {
         text-align: center;
     }
-    .mobileMain {
+    #desktopMain {
+        display: none;
+    }
+    #mobileMain {
         display: inline-block;
         margin: auto;
         margin-top: 50px;
@@ -341,7 +341,7 @@ footer {
         color: white;
         border: none;
     }
-    
+
     footer {
         bottom: -50px;
     }

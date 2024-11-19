@@ -1,3 +1,18 @@
+function chooseLoginRegisterFunc(loginRegister) {
+    if (loginRegister == 1) {
+        document.getElementById("forms-cadastro").style.display = "none";
+        document.getElementById("formMainLabelRegister").style.display = "none";
+    }
+    else if (loginRegister == 2) {
+        document.getElementById("forms-login").style.display = "none";
+        document.getElementById("formMainLabelLogin").style.display = "none";
+    }
+    
+    document.getElementById("desktopMain").style.display = "block";
+    document.getElementById("formDivisor").style.display = "none";  // General, valid for any of the options. //
+    document.getElementById("mobileMain").style.display = "none";
+}
+
 function passwordShowHide(passwordShowHideButtonNumber) {
     var passwordShowHideElementID = document.getElementById("senha" + passwordShowHideButtonNumber)
     var currentPasswordShowHidePosition = document.getElementById("passwordShowHideButton" + passwordShowHideButtonNumber).src

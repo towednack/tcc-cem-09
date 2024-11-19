@@ -22,24 +22,24 @@
     </header>
 
     <!-- MOBILE CODE -->
-    <main class="mobileMain">
+    <main id="mobileMain">
         <div class="chooseLoginRegister">
             <p>O que você gostaria de fazer?</p>
             <br>
-            <button>ENTRAR</button>
+            <button onclick="chooseLoginRegisterFunc(1)">ENTRAR</button>
             <br>
-            <button>REGISTRAR</button>
+            <button onclick="chooseLoginRegisterFunc(2)">REGISTRAR</button>
         </div>
     </main>
     <!-- DESKTOP CODE -->
-    <main>
+    <main id="desktopMain">
         <div class="formMainLabels">
-            <p>Se registre como aluno:</p>
-            <p>Faça login como aluno:</p>
+            <p id="formMainLabelRegister">Se registre como aluno:</p>
+            <p id="formMainLabelLogin">Faça login como aluno:</p>
         </div>
         <div class="container-forms">
 
-            <div class="forms-cadastro">
+            <div id="forms-cadastro">
                 <form action="#" method="post">
                     <!-- nome para cadastro -->
                     <div class="form-group">
@@ -113,9 +113,9 @@
 
             </div>
 
-            <div class="formDivisor"></div>
+            <div id="formDivisor"></div>
 
-            <div class="forms-login">
+            <div id="forms-login">
                 <form action="#" method="post">
                     <!-- email para cadastro -->
                     <div class="form-group">

@@ -5,7 +5,7 @@
 body {
     font-family: "ABeeZee", sans-serif !important;
     margin: 0;
-    background-color: #263051;
+    background: radial-gradient(circle, rgba(48,60,101,1) 23%, rgba(38,48,81,1) 75%);
 }
 
 header {

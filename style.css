@@ -21,7 +21,7 @@ body {
     transition: .4s;
     font-family: "ABeeZee", sans-serif;
     margin: 0;
-    background-color: #263051;
+    background: radial-gradient(circle, rgba(48,60,101,1) 23%, rgba(38,48,81,1) 75%);
 }
 * {
     -webkit-transition:0.3s;
@@ -283,6 +283,31 @@ header .userPanelBG {
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8)) drop-shadow(0px 0px 3px rgba(134, 176, 252, 1));
 }
 
+.pageInfoCategories {
+    margin-top: 80px !important;
+}
+.categories {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 0px;
+    padding: 20px;
+}
+.categoryBlock {
+    display: inline-flex;
+    text-align: center;
+    width: 250px;
+    height: 80px;
+    margin: 10px;
+    margin-bottom: 25px;
+    padding: 15px 10px 0 5px;
+    border-radius: 7px;
+    background-color: #1a2341;
+}
+.categoryBlock .postTitle {
+    margin-top: 12%;
+    font-size: 18px;
+}
 
 /* Iframe */
 .iframeMain {

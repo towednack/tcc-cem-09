@@ -21,7 +21,24 @@ body {
     transition: .4s;
     font-family: "ABeeZee", sans-serif;
     margin: 0;
-    background: radial-gradient(circle, rgba(48,60,101,1) 23%, rgba(38,48,81,1) 75%);
+    background: none transparent;
+}
+.indexBody {
+    background: radial-gradient(circle, rgb(48, 60, 101) 23%, rgba(38,48,81,1) 75%);
+}
+#indexBackgroundImage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(media/background/dark/graffiti2.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-blend-mode: soft-light;
+    opacity: 0.7;
 }
 * {
     -webkit-transition:0.3s;
@@ -270,6 +287,7 @@ header .userPanelBG {
     margin-bottom: 25px;
     padding: 20px 10px 0 10px;
     border-radius: 7px;
+    filter: drop-shadow(-6px 10px 15px rgba(0, 0, 0, 0.3));
     background-color: #1a2341;
 }
 

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body class="indexBody">
+    <div id="indexBackgroundImage"></div>
     <header>
         <div class="overlay"> <!-- iframe fix -->
             <div class="headerDropShadow"></div>
@@ -24,13 +25,13 @@
             </ul>
             <div id="themeSwitch">
                 <div class="tooltip">
-                    <img src="media/icons/sunIcon.png" alt="Mudar tema do site.">
+                    <img onclick="changeThemeImg()" src="media/icons/sunIcon.png" alt="Mudar tema do site.">
                     <span class="tooltiptext">Mudar o tema de cores.</span>
                 </div>
             </div>
             <div class="userPanel">
                 <div class="tooltip">
-                    <img onclick="location.href='login/index.html'" src="media/icons/userIconWhite.png" alt="Painel do usuário.">
+                    <img onclick="location.href='login/login.html'" src="media/icons/userIconWhite.png" alt="Painel do usuário.">
                     <span class="tooltiptext">Entrar ou registrar.</span>
                 </div>
             </div>
@@ -42,7 +43,7 @@
                 <button>Horários</button>
                 <button>Merenda</button>
                 <button>Calendário</button>
-                <button>Entrar</button>
+                <button onclick="location.href='login/login.html'">Entrar</button>
             </div>
         </div>
     </header>

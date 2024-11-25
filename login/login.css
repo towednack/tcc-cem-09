@@ -52,16 +52,45 @@ header {
     width: 140px;
 }
 
+.themeSwitchBlock {
+    position: absolute !important;
+    top: 42px;
+    right: 45px;
+}
 #themeSwitch {
     width: 35px !important;
 }
 
-header #themeSwitch {
-    position: absolute;
-    top: 42px;
-    right: 45px;
+/* Tooltips */
+.tooltip {
+    position: relative;
 }
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 120%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .tooltiptext:hover {
+    visibility: hidden;
+}
+
+/* Body */
 #mobileMain {
     display: none;
 }

@@ -18,7 +18,10 @@
             </div>
             <h1 class="welcome">Bem-vindo(a)!</h1>
             <p>Para ter uma experiência personalizada, entre com sua conta abaixo.</p>
-            <img src="../media/icons/sunIcon.png" id="themeSwitch">
+            <div class="themeSwitchBlock tooltip">
+                <img src="../media/icons/sunIcon.png" id="themeSwitch">
+                <span class="tooltiptext">Mudar o tema de cores.</span>
+            </div>
     </header>
 
     <!-- MOBILE CODE -->
@@ -35,7 +38,7 @@
     <main id="desktopMain">
         <div class="formMainLabels">
             <p id="formMainLabelRegister">Se registre como aluno:</p>
-            <p id="formMainLabelLogin">Faça login como aluno:</p>
+            <p id="formMainLabelLogin">Entre como aluno:</p>
         </div>
         <div class="container-forms">
 
@@ -60,8 +63,9 @@
                     <div class="form-group">
                         <label for="senha">Senha:</label>
                         <input type="password" name="senha1" id="senha1">
-                        <span class="input-group-addon">
+                        <span class="input-group-addon tooltip">
                             <img src="../media/icons/closedEyeWhite.png" id="passwordShowHideButton1" onclick="passwordShowHide(1)">
+                            <span class="tooltiptext">Mostrar ou esconder a senha.</span>
                         </span>
                     </div>
 
@@ -127,8 +131,9 @@
                     <div class="form-group">
                         <label for="senha">Senha:</label>
                         <input type="password" name="senha2" id="senha2">
-                        <span class="input-group-addon">
+                        <span class="input-group-addon tooltip">
                             <img src="../media/icons/closedEyeWhite.png" id="passwordShowHideButton2" onclick="passwordShowHide(2)">
+                            <span class="tooltiptext">Mostrar ou esconder a senha.</span>
                         </span>
                     </div>
 

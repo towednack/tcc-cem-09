@@ -373,7 +373,7 @@ header .userPanelBG {
 }
 
 /* Iframe */
-.iframeMain {
+#iframeMain {
     position:absolute;
     top: 50px;
     left: 0px;

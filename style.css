@@ -31,6 +31,44 @@ body {
     margin: 0;
 }
 
+/* Tooltips */
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 120%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .tooltiptext:hover {
+    visibility: hidden;
+}
 
 /* Cabeçalho da página. */
 .overlay {
@@ -257,6 +295,7 @@ header .userPanelBG {
     font-size: 22px;
 }
 .rightSide #postButton {
+    z-index: 10;
     position: absolute;
     left:0;
     right:0;
@@ -307,6 +346,30 @@ header .userPanelBG {
 .categoryBlock .postTitle {
     margin-top: 12%;
     font-size: 18px;
+}
+
+/* Eventos */
+.postsMainEventos {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.postBlockEventos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 25px;
+    padding: 20px 10px 0 10px;
+    border-radius: 7px;
+    background-color: #1a2341;
 }
 
 /* Iframe */

@@ -1,2 +1,3 @@
     - JS - Get iframe page title and assign it to main page.
     - Minimize images size.
+    - Rate limiter to theme change.

@@ -5,7 +5,7 @@ function iframeResetToIndex() {
 }
 
 function changeThemeImg() {
-    var totalNumberOfImages = 2
+    var totalNumberOfImages = 6
 
     var themeImg = document.getElementById('indexBackgroundImage'),
     style = themeImg.currentStyle || window.getComputedStyle(themeImg, false),

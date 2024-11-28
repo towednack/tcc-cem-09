@@ -8,6 +8,39 @@ body {
     background: radial-gradient(circle, rgba(48,60,101,1) 23%, rgba(38,48,81,1) 75%);
 }
 
+.iframeReplit {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#formMessage {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 80px;
+    text-align: center;
+    color: #fff;
+    background-color: #171E38;
+}
+#formMessage p {
+    font-size: 20px;
+}
+#formMessage button {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-transform: none;
+}
+
 header {
     display: flex;
     justify-content: center;

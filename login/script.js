@@ -40,3 +40,13 @@ function forgotPassword(openOrClose) {
         document.getElementById("forgotPasswordPopup").style.display = "none";
     }
 }
+
+function goToHome() {
+    window.location.href = "home.php";
+}
+
+function outputLogin(message, button) {
+    document.getElementById("formMessage").style.display = "block"
+    document.getElementById("formMessageP").innerHTML = message
+    document.getElementById("formMessageButton").innerHTML = button
+}

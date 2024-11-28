@@ -13,7 +13,7 @@ Git and Github
 Download Git from the official website
 In your file explorer open a folder and in that folder start Git Bash
 In your Git Bash use the command: git init
-Clone the repository to your local machine using the command: git clone ACIC.git <!-- coloca o link do repositório aqui--> or just open the site clicking here: <!--coloca o link do site aqui--> 
+Clone the repository to your local machine using the command: git clone ACIC.git https://github.com/towednack/tcc-cem-09 or just open the site clicking here: https://worm.farted.net/tcc-cem-09
 In your Visual Studio Code open the folder where you cloned the repository
 Download the file from the repository using the command: git checkout ACIC.git
 

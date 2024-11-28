@@ -19,3 +19,17 @@ function changeThemeImg() {
         themeImg.style.backgroundImage = "url('media/background/dark/graffiti1.png')"
     }
 }
+
+function downloadHorario() {
+  const link = document.createElement('a');
+  link.href = 'https://drive.google.com/uc?export=download&id=1CCnK_9ZOh3ii04d4j2MzJp5w_C-auGm8';
+  link.download = 'CronogramaDeAulas.pdf';
+  link.click();
+}
+
+function downloadCalendario() {
+  const link = document.createElement('a');
+  link.href = 'https://drive.google.com/uc?export=download&id=1XriOA75JfjfHF7U61rO8jqxiFUkD3JNG';
+  link.download = 'CalendarioAnual2025.pdf';
+  link.click();
+}

@@ -33,3 +33,7 @@ function downloadCalendario() {
   link.download = 'CalendarioAnual2025.pdf';
   link.click();
 }
+
+function goToPage(url) {
+    document.getElementById("iframeMain").src = url
+}

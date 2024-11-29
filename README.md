@@ -31,9 +31,9 @@ O objetivo do site escolar é fornecer suporte aos alunos, facilitando o acesso 
 
 Cada seção do site possui uma funcionalidade específica, projetada para melhorar a experiência do usuário. Algumas dessas seções servem apenas como demonstração, com o objetivo de ilustrar como o site funcionará, detalhando suas ideias e recursos. Por exemplo, na seção "Equipe", os usuários (sejam alunos ou visitantes) poderão visualizar informações sobre os membros que fazem parte da direção, secretaria, apoio escolar e os professores. Esta página foi criada para promover transparência e permitir que os alunos conheçam melhor os responsáveis pelo funcionamento da escola.
 
-    Modo Claro e Escuro
+    Diferentes temas
 
-O site oferece suporte para dois temas: claro e escuro. O usuário pode alternar entre os dois modos com apenas um clique, adaptando a interface conforme sua preferência visual.
+O site oferece suporte para vários temas. O usuário pode alternar entre eles com apenas um clique, adaptando a interface conforme sua preferência visual.
 
     Login do Aluno
 
